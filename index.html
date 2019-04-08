@@ -8,13 +8,12 @@
   <meta name="description" content="Awesome knitted sweaters">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- Ubačen slick css -->
-  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
+ 
 </head>
 
 <body>
@@ -29,7 +28,9 @@
           <span></span>
           <span></span>
         </button>
-        <a href="index.html" class="header-logo"><img src="img/logo.png" alt="Revolver Pullover"></a>
+        <div class="logo">
+            <a href="index.html"><img class="logo"src="img/logo.png" alt="Revolver Pullover"></a>
+          </div>
        <nav class="nav">
         
       <ul class="unstyle-list">
@@ -47,62 +48,193 @@
 
     <section class="hero">
       <div class="container">
-        <div class="lea">
           <button class="hero-order">Order Now</button>
-          <p class="first">MODERN</p>
-          <p class="second">KNITTED SWEATERS</p>
-        </div>
+          <p>
+            MODERN
+          <strong>KNITTED SWEATERS</strong>
+        </p>
       </div>
 
     </section>
     <section class="products">
       <div class="our-products">
-        <h1 class="products-text">our products</h1>
-        <!-- js-slider klasa je tu samo da selektujes element u javascritpu, stilizuj slajder prema klasi our-products-slider i our-products-slider-image -->>
-        <div class="our-products-slider js-slider">
-          <img class="our-products-slider-image" src="img/i1.JPG" alt="">
-          <img class="our-products-slider-image" src="img/i2.JPG" alt="">
-          <img class="our-products-slider-image" src="img/i3.JPG" alt="">
-          <img class="our-products-slider-image" src="img/i4.JPG" alt="">
-          <img class="our-products-slider-image" src="img/i5.JPG" alt="">
-          <img class="our-products-slider-image" src="img/i6.JPG" alt="">
-          <img class="our-products-slider-image" src="img/i7.JPG" alt="">
-          <img class="our-products-slider-image" src="img/i8.JPG" alt="">
+        <h1 class="title">our products</h1>
+        <hr>
+        <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="img/image1.jpg" />
+                <span class="price">&#36;45</span>
+                <button class="products-order">Order Now</button>
+              </li>
+              <li>
+                <img src="img/image2.jpg" />
+                <span class="price">&#36;45</span>
+                <button class="products-order">Order Now</button>
+              </li>
+              <li>
+                <img src="img/image3.jpg" />
+                <span class="price">&#36;45</span>
+                <button class="products-order">Order Now</button>
+              </li>
+              <li>
+                <img src="img/image4.jpg" />
+                <span class="price">&#36;45</span>
+                <button class="products-order">Order Now</button>
+              </li>
+              <li>
+                  <img src="img/image5.jpg" />
+                  <span class="price">&#36;45</span>
+                  <button class="products-order">Order Now</button>
+                </li>
+                <li>
+                  <img src="img/image6.jpg" />
+                  <span class="price">&#36;45</span>
+                  <button class="products-order">Order Now</button>
+                </li>
+                <li>
+                  <img src="img/image7.jpg" />
+                  <span class="price">&#36;45</span>
+                  <button class="products-order">Order Now</button>
+                </li>
+                <li>
+                  <img src="img/image8.jpg" />
+                  <span class="price">&#36;45</span>
+                  <button class="products-order">Order Now</button>
+                </li>
+            </ul>
+          </div>      
         </div>
-      </div>
       
 
     </section>
     <section class="gallery">
-      <div class="row"> 
-        <div class="column">
-          <img src="img/img1.JPG">
-          <img src="img/img2.jpg">
-          <img src="img/img3.jpg">
-          <img src="img/img4.jpg">
-          <img src="img/img5.JPG">
-          
-          
-        </div>
-        <div class="column">
-          <img src="img/img8.jpg">
-          <img src="img/img9.JPG">
-          <img src="img/img10.JPG">
-          <img src="img/img11.jpg">
-          <img src="img/img12.JPG">
-          
-        </div> 
-        <div class="column">
-          <img src="img/img14.JPG">
-          <img src="img/img15.JPG">
-          <img src="img/img16.JPG">          
-          <img src="img/img18.JPG">
-          <img src="img/img19.JPG">
-          
-        </div>
-      </div>
+        <h1 class="title">gallery</h1>
+        <hr class="gallery-hr">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 padcol ">
+                    <div class="col-3">
+                        <a href="#"><img src="img/gal1.jpg" class="img-responsive" alt="sweaters"></a>                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 padcol ">
+                    <div class="col-3">
+                        <a href="#"><img src="img/gal2.jpg" class="img-responsive" alt="sweaters"></a>
+                            
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 padcol ">
+                    <div class="col-3">
+                        <a href="#"><img src="img/gal3.jpg" class="img-responsive" alt="sweaters"></a>                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 padcol ">
+                    <div class="col-3">
+                        <a href="#"><img src="img/gal4.jpg" class="img-responsive" alt="sweaters"></a>                            
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 padcol ">
+                    <div class="col-3">
+                        <a href="#"><img src="img/gal5.jpg" class="img-responsive" alt="sweaters"></a>
+                            
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 padcol ">
+                    <div class="col-3">
+                        <a href="#"><img src="img/gal6.jpg" class="img-responsive" alt="sweaters"></a>
+                            
+                    </div>
+                </div>
+            </div>
+             </div> 
 
       
+    </section>
+    <!---------Our Story-------------> 
+    <section class="gallery">
+        <h1 class="title">our story</h1>
+        <hr>
+        
+      <div class="wrapper"></div>
+      <h3>who are we</h3>
+      <p class="story">Hi!
+    We are Stefan and Filip Šćekić brothers
+      Young fashion designers from small town Apatin, Serbia.
+      </p>
+        
+              <div>
+                <img class="img-story" src="img/taske.jpg" alt="tasic"/>
+              </div>
+        
+      </div>    
+      
+    </section>
+
+  <!-- Section About Us-->
+    <div class="wrapper">
+      
+            <h3>idea</h3>
+            
+            <p class="story">Our idea is to bring together young artists from Serbia to create interesting design that would be transferred to our sweaters.
+            </p>            
+               <img class="img-story" src="img/ourstory.jpg" alt="" />
+            
+          
+        </div>
+      
+    </section>
+
+    <!--------Footer----------->
+    <footer class="section bg-footer">
+      <div class="logo">
+        <a href="index.html"><img class="footer-logo"src="img/logo2.png" alt="Revolver Pullover"></a>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3">
+                  <div class="">
+                      <h6 class="footer-heading">Contact Us</h6>
+                      <ul class="footer-unstyle">
+                          <li class="contact">Telephone</li>
+                          <li class="contact">025/772-346</li>
+                          <li class="contact">Adress</li>
+                          <li class="contact">Poštanska 1,</li>
+                          <li class="contact">Apatin</li>
+                          <li class="contact">Serbia</li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-lg-3">
+                  <div class="">
+                      <h6 class="footer-heading">Menu</h6>
+                      <ul class="footer-unstyle">
+                          <li><a class="link-footer" href="">Home</a></li>
+                          <li><a class="link-footer" href="">Gallery</a></li>
+                          <li><a class="link-footer" href="">Products</a></li>
+                          <li><a class="link-footer" href="">Our Story</a></li>
+                      </ul>
+                  </div>
+              </div>        
+
+              
+                  
+                      
+             
+          </div>
+      </div>
+
+      <div class="text-center mt-5">
+          <p class="footer-alt mb-0 f-14">2019 © Aljosa, All Rights Reserved</p>
+      </div>
+  </footer>
+     
+
+    
+
+
+
     </section>
 
      
@@ -169,10 +301,29 @@
   
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/vendor/slick.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>  
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  <script src="js/plugins.js"></script>  
+  <script src="js/jquery.flexslider.js"></script>
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
