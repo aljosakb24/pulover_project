@@ -56,8 +56,10 @@ $('a[href*="#"]')
  
   // tiny helper function to add breakpoints
   function getGridSize() {
-    return (window.innerWidth < 600) ? 1 :
-    (window.innerWidth < 900) ? 1 :
+    return (window.innerWidth < 480) ? 1 :
+    (window.innerWidth < 768) ? 2 :
+    (window.innerWidth < 992) ? 3 :
+    (window.innerWidth < 1024) ? 3 :
     (window.innerWidth > 1366) ? 3 : 4;
   }
  
