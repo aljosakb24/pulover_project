@@ -824,3 +824,36 @@ img.img-responsive {
     }
   }
 
+
+
+/* Our story */
+
+@media only screen and (min-width: 320px) {
+    .columns {
+    display: inline-block;
+    }
+
+    .columns .kol-1,
+    .columns .kol-2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+    
+    .columns .kol-1,
+    .columns .kol-2 {
+        width: 50%;
+    }
+
+    .kol-1 {
+        order: 1;
+    }
+
+    .kol-2 {
+        order: 2;
+    }
+}
