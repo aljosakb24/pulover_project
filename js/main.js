@@ -20,8 +20,8 @@ $('a[href*="#"]')
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -53,7 +53,7 @@ $('a[href*="#"]')
   // store the slider in a local variable
   var $window = $(window),
       flexslider = { vars:{} };
- 
+
   // tiny helper function to add breakpoints
   function getGridSize() {
     return (window.innerWidth < 480) ? 1 :
@@ -62,11 +62,11 @@ $('a[href*="#"]')
     (window.innerWidth < 1024) ? 3 :
     (window.innerWidth > 1366) ? 3 : 4;
   }
- 
+
   $(function() {
     // SyntaxHighlighter.all();
   });
- 
+
   $window.load(function() {
     $('.flexslider').flexslider({
       animation: "slide",
@@ -77,11 +77,30 @@ $('a[href*="#"]')
       maxItems: getGridSize() // use function to pull in initial value
     });
   });
- 
+
   // check grid size on resize event
   $window.resize(function() {
     var gridSize = getGridSize();
- 
+
     flexslider.vars.minItems = gridSize;
     flexslider.vars.maxItems = gridSize;
   });
+
+/* HAMBURGER MENU */
+$('.menu-toggle').on("click", function() {
+  $(this).toggleClass('open');
+  $('nav ul').toggleClass('opening');
+  $('.nav').toggleClass('navigation-menu');
+  if ($("nav").hasClass("navigation-menu")) {
+    $('body').addClass('disable-scroll')
+  } else {
+    $('body').removeClass('disable-scroll')
+  }
+});
+
+$('ul li a').on("click", function() {
+  $('.nav').removeClass('navigation-menu')
+  $('.menu-toggle').removeClass('open');
+  $('nav ul').removeClass('opening');
+  $('body').removeClass('disable-scroll')
+});
