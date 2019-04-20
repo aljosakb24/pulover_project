@@ -562,7 +562,7 @@ span.price {
 .btn-products-order:hover {
     background-color: #DCDCDC;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
-    color: wheat;
+    color: black;
 
 }
 
@@ -620,7 +620,11 @@ span.price {
 
 
 /***************** Our Story *************/
-
+.our-story { 
+    max-width: 900px;
+    margin:0 auto;
+   
+}
 .kol-1 {
     border: 1px solid black;
     margin-bottom: 10px;
@@ -645,7 +649,7 @@ h3 {
     text-transform: uppercase;
 }
 
-.story {
+p .story {
     text-align: center;
 }
 
