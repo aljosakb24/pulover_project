@@ -557,6 +557,8 @@ span.price {
 /******************* GALLERY **********/
 .gallery {
     padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .gallery-hr {
