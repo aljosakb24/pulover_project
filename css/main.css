@@ -267,6 +267,30 @@ nav ul.opening {
 }
 
 @media only screen and (min-width: 992px) {
+    a.underline {
+        color: #fff;
+     }
+     a.underline {
+        position: relative;
+        transition: background-color 0.5s ease;
+        -webkit-transition: background-color 0.5s ease;
+        color: #fff;
+        z-index: 1;
+        white-space: nowrap;
+     }
+     a.underline:hover {
+        background: #62545b;
+     }
+     a.underline:after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #62545b;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        z-index: -1;
+     }
     .nav {
         display: block;
         position: initial;
@@ -305,56 +329,6 @@ nav ul.opening {
     }
 }
 
-/* .burger {
-    border:none;
-    background:transparent;
-    width: 44px;
-    padding: 20px 5px;
-    float: right;
-    margin-top: 4px;
-}
-.burger span {
-    width: 100%;
-    height: 2px;
-    background-color:black;
-    display: block;
-    margin-top: 9px;
-}
-.burger span:nth-child(1) {
-    margin-top: 0;
-}
-
-
-nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    text-align: right;
-    color: #000;
-    z-index: 1;
-}
-nav ul {
-    display: table-cell;
-    vertical-align: middle;
-}
-ul.unstyle-list.opening {
-    display: table-cell; }
-nav a {
-    color:#FFF;
-    font-size: 3.6em;
-    line-height: 70px;
-    padding: 5px 10px;
-
-}
-nav .btn {
-    background: #FFF;
-    font-size: 3.6em;
-    color: #000;
-} */
 
 
 /***************** Hero ***********************/
@@ -362,7 +336,7 @@ nav .btn {
     background: url(../img/background.png) no-repeat center center;
     background-size: 100% auto;
     padding: 50px 10px 20px;
-    min-height: 160px;
+    min-height: 200px;
 }
 
 .hero p {
@@ -538,6 +512,7 @@ hr {
 
 .flexslider .slides img {
     max-height: 300px;
+    width: auto;
 }
 
 span.price {
@@ -774,6 +749,7 @@ a.link-footer {
 
     p.story {
         font-size: 2em;
+        text-align:center;
     }
 
     img.img-responsive {
@@ -798,6 +774,10 @@ a.link-footer {
 }
 
 @media only screen and (min-width: 768px) {
+    p strong{ 
+        font-size: 1.5em;
+
+    }
     img.img-responsive {
         width: 100%;
         height: 100%;
@@ -814,6 +794,8 @@ a.link-footer {
 
     p.story {
         font-size: 2.5em;
+        text-align:center;
+
     }
 
     .kol-1 {
@@ -829,6 +811,7 @@ a.link-footer {
 
     p.story {
         margin: 15px 15px 0px 15px;
+        text-align:center;
     }
 
     .c-item img {
@@ -844,9 +827,21 @@ a.link-footer {
 }
 
 @media only screen and (min-width: 1024px) {
-    /* nav {
-        display: none;
-    } */
+    
+    .hero {
+        height:450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+    p.story {
+        padding-left: 30px;
+        padding-right:30px;
+        text-align:center;
+    }
+
 
 
 }
