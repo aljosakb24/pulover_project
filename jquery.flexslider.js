@@ -237,27 +237,27 @@
             for (var i = 0; i < slider.pagingCount; i++) {
               slide = slider.slides.eq(i);
 
-              if ( undefined === slide.attr( 'data-thumb-alt' ) ) { 
-                slide.attr( 'data-thumb-alt', '' ); 
+              if ( undefined === slide.attr( 'data-thumb-alt' ) ) {
+                slide.attr( 'data-thumb-alt', '' );
               }
-              
+
               item = $( '<a></a>' ).attr( 'href', '#' ).text( j );
               if ( slider.vars.controlNav === "thumbnails" ) {
                 item = $( '<img/>' ).attr( 'src', slide.attr( 'data-thumb' ) );
               }
-              
+
               if ( '' !== slide.attr( 'data-thumb-alt' ) ) {
                 item.attr( 'alt', slide.attr( 'data-thumb-alt' ) );
               }
 
               if ( 'thumbnails' === slider.vars.controlNav && true === slider.vars.thumbCaptions ) {
                 var captn = slide.attr( 'data-thumbcaption' );
-                if ( '' !== captn && undefined !== captn ) { 
+                if ( '' !== captn && undefined !== captn ) {
                   var caption = $('<span></span>' ).addClass( namespace + 'caption' ).text( captn );
                   item.append( caption );
                 }
               }
-              
+
               var liElement = $( '<li>' );
               item.appendTo( liElement );
               liElement.append( '</li>' );
@@ -980,7 +980,7 @@
             } else {
               slider.newSlides.css({"width": slider.computedW, "marginRight" : slider.computedM, "float": "left", "display": "block"});
             }
-              
+
            }
             else{
               slider.newSlides.css({"width": slider.computedW, "marginRight" : slider.computedM, "float": "left", "display": "block"});
@@ -1178,8 +1178,8 @@
     // Primary Controls
     controlNav: true,               //Boolean: Create navigation for paging control of each slide? Note: Leave true for manualControls usage
     directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
-    prevText: "Previous",           //String: Set the text for the "previous" directionNav item
-    nextText: "Next",               //String: Set the text for the "next" directionNav item
+    prevText: "",           //String: Set the text for the "previous" directionNav item
+    nextText: "",               //String: Set the text for the "next" directionNav item
 
     // Secondary Navigation
     keyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys
