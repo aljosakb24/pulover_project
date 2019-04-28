@@ -72,7 +72,7 @@ $('a[href*="#"]')
       animation: "slide",
       animationLoop: false,
       itemWidth: 210,
-      itemMargin: 5,
+      itemMargin: 4,
       minItems: getGridSize(), // use function to pull in initial value
       maxItems: getGridSize() // use function to pull in initial value
     });
