@@ -509,14 +509,16 @@ hr {
     margin: 30px 0px 10px 20px;
 
 }
-
+.list-products {
+    width:auto;
+}
 .flexslider .slides img {
     max-height: 300px;
     width: auto;
 }
 
 span.price {
-    float: right;
+    
     font-weight: bold;
     margin: 10px 5px 10px 0px;
     font-size: 2em;
@@ -529,9 +531,10 @@ span.price {
     padding: 10px 0px;
     margin-bottom: 10px;
     display: block;
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     text-align: center;
+    align-content: center;
 }
 
 .btn-products-order:hover {
