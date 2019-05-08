@@ -105,6 +105,7 @@ body {
     font-weight: 300;
     color: #555;
     font-family: 'Raleway', serif;
+
 }
 
 h2 {
@@ -584,10 +585,13 @@ span.price {
     height: 350px;
     width: 350px;
     position: relative;
-    margin: 10px;
+    margin: 10px auto;
+}
+.c-item a {
+    width: 32%;
 }
 
-.c-item img {
+.c-item a img {
     position: absolute;
     top: 0;
     left: 0;
